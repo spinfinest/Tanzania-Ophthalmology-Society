@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tanzania Ophthalmology Society</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="spinner-overlay" id="loadingSpinner">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/op logo.png" width="50" height="50" class="rounded-circle me-2" alt="TOS Logo"> 
+                <span>Tanzania Ophthalmology Society</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#outreach">OutReach</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#appointment">Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+                <!-- Slide 1 - Annual Conference -->
+                <div class="carousel-item active">
+                    <div class="carousel-background" style="background: linear-gradient(135deg, #1a5f7a 0%, #159895 100%);"></div>
+                    <div class="container">
+                        <div class="row align-items-center carousel-content">
+                            <div class="col-lg-6 col-md-12" data-aos="fade-right">
+                                <span class="badge bg-warning text-dark mb-3 px-3 py-2">Annual Conference 2026</span>
+                                <h1 class="display-4 fw-bold mb-4">7th Annual Conference</h1>
+                                <h3 class="text-white mb-3">18th-19th Mbeya City Park Hotel</h3>
+                                <p class="lead mb-4">Theme: Vision Sovereignty - Integrating Eye Health into Tanzania's UHC for sustainable impact.</p>
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <a href="https://register.tos.or.tz/TOS/tos2026/" class="btn btn-warning btn-lg px-4" target="_blank">Register Now</a>
+                                    <a href="#services" class="btn btn-outline-light btn-lg px-4">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 mt-4 mt-lg-0" data-aos="fade-left">
+                                <img src="images/pic.png" alt="Conference" class="img-fluid rounded-4 shadow-lg" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 - LASIK Surgery -->
+                <div class="carousel-item">
+                    <div class="carousel-background" style="background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);"></div>
+                    <div class="container">
+                        <div class="row align-items-center carousel-content">
+                            <div class="col-lg-6 col-md-12" data-aos="fade-right">
+                                <span class="badge bg-light text-primary mb-3 px-3 py-2">Vision Correction</span>
+                                <h1 class="display-4 fw-bold mb-4">LASIK Eye Surgery</h1>
+                                <p class="lead mb-4">Freedom from glasses and contacts with our state-of-the-art LASIK technology.</p>
+                                <div class="service-highlights mb-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-check-circle me-2"></i>15-minute procedure
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-check-circle me-2"></i>99% patient satisfaction
+                                    </div>
+                                    <div class="highlight-item">
+                                        <i class="fas fa-check-circle me-2"></i>Same-day recovery
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <a href="#appointment" class="btn btn-light btn-lg px-4">Book Consultation</a>
+                                    <a href="#services" class="btn btn-outline-light btn-lg px-4">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 mt-4 mt-lg-0" data-aos="fade-left">
+                                <img src="images/2.jpg" alt="LASIK Surgery" class="img-fluid rounded-4 shadow-lg" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional slides shortened for brevity - keep same structure -->
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <!-- Carousel Progress Bar -->
+            <div class="carousel-progress">
+                <div class="progress-bar" id="carouselProgress"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-card">
+                        <i class="fas fa-user-md fa-3x text-primary"></i>
+                        <div class="stat-number" data-target="45">45</div>
+                        <p class="text-muted mb-0">Expert Doctors</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-card">
+                        <i class="fas fa-smile fa-3x text-primary"></i>
+                        <div class="stat-number" data-target="15000">15K+</div>
+                        <p class="text-muted mb-0">Happy Patients</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-check fa-3x text-primary"></i>
+                        <div class="stat-number" data-target="15">15</div>
+                        <p class="text-muted mb-0">Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-card">
+                        <i class="fas fa-award fa-3x text-primary"></i>
+                        <div class="stat-number" data-target="25">25</div>
+                        <p class="text-muted mb-0">Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Our Services</h2>
+                <p class="lead text-muted">Comprehensive eye care solutions tailored to your needs</p>
+            </div>
+            <div class="row g-4" id="servicesContainer">
+                <!-- Service cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Outreach Section - Fixed Cards -->
+    <section id="outreach" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Community Outreach</h2>
+                <p class="lead text-muted">Bringing eye care to communities across Tanzania</p>
+            </div>
+            <div class="row g-4" id="outreachContainer">
+                <div class="col-lg-3 col-md-6">
+                    <div class="outreach-card">
+                        <div class="outreach-image">
+                            <img src="images/children home.jpg" alt="Children's Orphanages" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="outreach-content">
+                            <h3 class="outreach-title">Children's Orphanages</h3>
+                            <p class="outreach-description">Providing pediatric eye care and corrective lenses to vulnerable children without parental care.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="outreach-card">
+                        <div class="outreach-image">
+                            <img src="images/26 (51).jpeg" alt="Public Schools" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="outreach-content">
+                            <h3 class="outreach-title">Public Schools</h3>
+                            <p class="outreach-description">Vision screening programs ensuring students can see the blackboard and succeed academically.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="outreach-card">
+                        <div class="outreach-image">
+                            <img src="images/11.jpeg" alt="Churches & Mosques" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="outreach-content">
+                            <h3 class="outreach-title">Churches & Mosques</h3>
+                            <p class="outreach-description">Partnering with faith communities to host vision clinics for congregants and neighbors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="outreach-card">
+                        <div class="outreach-image">
+                            <img src="images/5.jpeg" alt="Elderly Care" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="outreach-content">
+                            <h3 class="outreach-title">Elderly Care</h3>
+                            <p class="outreach-description">Cataract screenings and reading glasses for seniors, restoring independence and dignity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="appointment-form" data-aos="fade-up">
+                        <h3 class="text-center mb-4">Engage With Us</h3>
+                        <form id="appointmentForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Appointment Date</label>
+                                    <input type="date" class="form-control" id="date" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Comment here</label>
+                                    <textarea class="form-control" id="reason" rows="3" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100 py-3">
+                                        <i class="fas fa-calendar-check me-2"></i>Book Appointment
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section - Fixed Cards -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">What Our Patients Say</h2>
+                <p class="lead text-muted">Real stories from real patients</p>
+            </div>
+            <div class="row g-4" id="testimonialsContainer">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text">"For five years, I couldn't see my grandchildren's faces. After the surgery arranged by Vision of Hope, I can finally see them smile. It's a miracle."</p>
+                            <div class="testimonial-author">
+                                <img src="images/01.jpg" alt="Grace Muhinya" class="author-img rounded-circle" loading="lazy">
+                                <div class="author-info">
+                                    <h5>Grace Muhinya</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text">"I was failing school because I couldn't read the board. The glasses they gave me changed everything. Now I'm top of my class!"</p>
+                            <div class="testimonial-author">
+                                <img src="images/child.webp" alt="Isaac Mgosi" class="author-img rounded-circle" loading="lazy">
+                                <div class="author-info">
+                                    <h5>Isaac Mgosi</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text">"As an imam, I watch our community benefit greatly when the clinic visits our mosque. It's true humanitarian work regardless of faith."</p>
+                            <div class="testimonial-author">
+                                <img src="images/imam.jpg" alt="Sheikh Amani" class="author-img rounded-circle" loading="lazy">
+                                <div class="author-info">
+                                    <h5>Sheikh Amani</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-12" data-aos="fade-right">
+                    <h3 class="fw-bold mb-4">Get in Touch</h3>
+                    <div class="contact-info">
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary me-3 flex-shrink-0"></i>
+                            <div>
+                                <h5>Address</h5>
+                                <p class="text-muted">P.O.Box 65001, Mwai Kibaki Road, Mikocheni, Dar es Salaam</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-phone fa-2x text-primary me-3 flex-shrink-0"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p class="text-muted">+255 767 219 019</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-envelope fa-2x text-primary me-3 flex-shrink-0"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p class="text-muted">info@tos.or.tz</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-clock fa-2x text-primary me-3 flex-shrink-0"></i>
+                            <div>
+                                <h5>Working Hours</h5>
+                                <p class="text-muted">Mon-Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12" data-aos="fade-left">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15846.55176123535!2d39.26946209773936!3d-6.813816690939812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sP.O.Box%2065001%2C%20P.O.Box%2065001%2C%20Mwai%20Kibaki%20Road%2C%20Mikocheni!5e0!3m2!1sen!2stz!4v1772297103618!5m2!1sen!2stz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
+    <footer class="modern-footer">
+        <!-- Main Footer -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Clinic Info -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo mb-4">
+                                <i class="fas fa-eye text-primary me-2"></i>
+                                <span>Tanzania Ophthalmology Society</span>
+                            </div>
+                            <p class="footer-text mb-4">
+                                Dedicated to improving eye health across Tanzania through quality care, education, and community outreach programs.
+                            </p>
+                            <div class="footer-social">
+                                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="#home"><i class="fas fa-chevron-right"></i>Home</a></li>
+                                <li><a href="#services"><i class="fas fa-chevron-right"></i>Services</a></li>
+                                <li><a href="#outreach"><i class="fas fa-chevron-right"></i>OutReach</a></li>
+                                <li><a href="#appointment"><i class="fas fa-chevron-right"></i>Appointment</a></li>
+                                <li><a href="#testimonials"><i class="fas fa-chevron-right"></i>Testimonials</a></li>
+                                <li><a href="#contact"><i class="fas fa-chevron-right"></i>Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Our Services -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Our Services</h4>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Cataract Surgery</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>LASIK Vision Correction</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Glaucoma Treatment</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Pediatric Ophthalmology</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Retina Care</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i>Comprehensive Exams</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter & Contact -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Newsletter</h4>
+                            <p class="footer-text mb-3">Subscribe for eye care tips and updates.</p>
+                            <form class="footer-newsletter mb-4" id="newsletterForm">
+                                <div class="newsletter-group">
+                                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                                    <button type="submit" class="newsletter-btn">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            <h4 class="footer-widget-title mt-4">Emergency Contact</h4>
+                            <div class="emergency-contact">
+                                <div class="emergency-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <div>
+                                        <span class="emergency-label">24/7 Emergency</span>
+                                        <span class="emergency-number">+255 767 219 019</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            <p class="mb-0">&copy; 2026 Tanzania Ophthalmology Society. All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Use</a>
+                            <a href="#">Cookie Policy</a>
+                            <a href="#">Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
